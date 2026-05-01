@@ -1,0 +1,68 @@
+*.js
+!jest.config.js
+*.d.ts
+!global.d.ts
+
+# CDK dns temp files
+*cdk-records.json
+*cdk-delete-cnames.json
+*cdk-delete-records.json
+cdk.context.json
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+.DS_Store
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# dotenv environment variable files
+# Commit shared, non-secret defaults:
+!.env
+
+# Never commit local overrides / secrets:
+.env.local
+.env.*.local
+
+
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+
+# pnpm store
+.pnpm-store

@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -F @root/ui dev",
+    "clean2": "pnpm -r run clean && rm -rf node_modules",
+    "package-cleanup": "pnpm -r run package-cleanup && rm -rf node_modules"
+  }
+}

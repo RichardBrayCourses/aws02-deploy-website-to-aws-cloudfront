@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "bootstrap-up": "pnpm -C bootstrap/scripts run bootstrap-up",
-    "bootstrap-down": "pnpm -C bootstrap/scripts run bootstrap-down",
+    "bootstrap-up": "pnpm -F @root/bootstrap run bootstrap-up-script",
+    "bootstrap-down": "pnpm -F @root/bootstrap run bootstrap-down-script",
     "dev": "pnpm -F @root/ui dev",
-    "clean2": "pnpm -r run clean && rm -rf node_modules",
     "package-cleanup": "pnpm -r run package-cleanup && rm -rf node_modules"
   }
 }

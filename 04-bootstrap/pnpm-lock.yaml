@@ -8,6 +8,8 @@ importers:
 
   .: {}
 
+  bootstrap: {}
+
   ui:
     dependencies:
       class-variance-authority:

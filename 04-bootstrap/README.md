@@ -4,11 +4,11 @@
 - add the following lines to the root package.json file
 
 ```json
-    "bootstrap-up": "pnpm -C bootstrap/scripts run bootstrap-up",
-    "bootstrap-down": "pnpm -C bootstrap/scripts run bootstrap-down",
+    "bootstrap-up": "pnpm -F @root/bootstrap run bootstrap-up-script",
+    "bootstrap-down": "pnpm -F @root/bootstrap run bootstrap-down-script",
 ```
 
-the run the following command
+then run the following command
 
 ```
 $ pnpm run bootstrap-up

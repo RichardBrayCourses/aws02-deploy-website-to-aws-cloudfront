@@ -1,0 +1,24 @@
+{
+  "name": "@root/deployment",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "deploy": "cdk deploy ui-cloudfront --require-approval never --app 'tsx ./src/bin/cloudfront.ts'",
+    "destroy": "cdk destroy ui-cloudfront --force --require-approval never --app 'tsx ./src/bin/cloudfront.ts'",
+    "synth": "cdk synth --app 'tsx ./src/bin/cloudfront.ts'",
+    "diff": "cdk diff --app 'tsx ./src/bin/cloudfront.ts'",
+    "type-check": "tsc --noEmit",
+    "package-cleanup": "rm -rf node_modules dist cdk.out"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.235.1",
+    "constructs": "10.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.3",
+    "aws-cdk": "2.1101.0",
+    "dotenv": "17.2.3",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
+  }
+}

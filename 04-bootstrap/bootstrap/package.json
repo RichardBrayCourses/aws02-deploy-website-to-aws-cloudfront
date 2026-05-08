@@ -1,8 +1,0 @@
-{
-  "name": "@root/bootstrap",
-  "version": "1.0.0",
-  "scripts": {
-    "bootstrap-up-script": "sh bootstrap-up.sh",
-    "bootstrap-down-script": "sh bootstrap-down.sh"
-  }
-}

@@ -1,0 +1,14 @@
+{
+  "name": "application1",
+  "version": "1.0.0",
+  "scripts": {
+    "msg": "echo Current folder: $(pwd)",
+    "ts": "tsc --version"
+  },
+  "dependencies": {
+    "react": "19.2.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

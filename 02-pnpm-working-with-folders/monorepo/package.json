@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "scripts": {
+    "msg": "echo Current folder: $(pwd)",
+    "msg-app1": "pnpm -s --dir ui/app1 run msg",
+    "msg-apps": "pnpm -r run msg",
+    "msg-all": "pnpm -F '*' run msg"
+  }
+}

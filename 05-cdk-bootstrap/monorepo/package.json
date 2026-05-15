@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "bootstrap-up": "pnpm -C scripts run bootstrap-up",
+    "bootstrap-down": "pnpm -C scripts run bootstrap-down",
+    "package-cleanup": "pnpm -r run package-cleanup && rm -rf node_modules"
+  }
+}

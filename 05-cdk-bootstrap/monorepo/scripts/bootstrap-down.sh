@@ -2,16 +2,12 @@
 
 # Delete the CDK bootstrap stack from your main region
 
-aws cloudformation delete-stack \
-  --stack-name "CDKToolkit" \
-  --region "eu-west-2"
+aws cloudformation delete-stack --stack-name "CDKToolkit" --region "eu-west-2"
 
 # Delete the CDK bootstrap stack from us-east-1
 # This region is commonly used for CloudFront SSL certificates
 
-aws cloudformation delete-stack \
-  --stack-name "CDKToolkit" \
-  --region "us-east-1"
+aws cloudformation delete-stack --stack-name "CDKToolkit" --region "us-east-1"
 
 # -----------------------------------------------------------------------------
 # ADVANCED CLEANUP (OPTIONAL)

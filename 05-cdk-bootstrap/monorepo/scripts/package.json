@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "scripts": {
     "bootstrap-up": "sh bootstrap-up.sh",
-    "bootstrap-down": "sh bootstrap-down.sh",
-    "package-cleanup": "rm -rf node_modules"
+    "bootstrap-down": "sh bootstrap-down.sh"
   }
 }

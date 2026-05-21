@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/scripts",
+  "name": "@root/scripts",
   "private": true,
   "version": "1.0.0",
   "scripts": {

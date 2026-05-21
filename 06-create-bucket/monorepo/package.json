@@ -1,0 +1,13 @@
+{
+  "name": "uptickart",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "bootstrap-up": "pnpm -C scripts run bootstrap-up",
+    "bootstrap-down": "pnpm -C scripts run bootstrap-down",
+    "cdk:deploy": "pnpm -F @root/cdk run deploy",
+    "cdk:destroy": "pnpm -F @root/cdk run destroy",
+    "type-check": "pnpm -F @root/cdk run type-check",
+    "package-cleanup": "pnpm -r package-cleanup && rm -rf node_modules"
+  }
+}

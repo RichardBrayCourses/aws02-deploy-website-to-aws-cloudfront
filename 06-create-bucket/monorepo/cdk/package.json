@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "deploy": "cdk deploy lesson-bucket --require-approval never --app 'tsx ./src/bin/bucket.ts'",
-    "destroy": "cdk destroy lesson-bucket --force --require-approval never --app 'tsx ./src/bin/bucket.ts'",
+    "deploy": "cdk deploy cloudfront-website --require-approval never --app 'tsx ./src/bin/cloudfront.ts'",
+    "destroy": "cdk destroy cloudfront-website --force --require-approval never --app 'tsx ./src/bin/cloudfront.ts'",
     "type-check": "tsc --noEmit",
     "package-cleanup": "rm -rf node_modules dist cdk.out"
   },

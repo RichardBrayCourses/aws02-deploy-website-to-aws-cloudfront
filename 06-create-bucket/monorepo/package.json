@@ -5,6 +5,8 @@
   "scripts": {
     "bootstrap-up": "pnpm -C scripts run bootstrap-up",
     "bootstrap-down": "pnpm -C scripts run bootstrap-down",
-    "deploy-cloudfront": "pnpm -C cdk run deploy-cloudfront"
+    "cdk:synth": "pnpm -C cdk run cdk:synth",
+    "cdk:deploy-from-cdk-out": "pnpm -C cdk run cdk:deploy-from-cdk-out",
+    "cdk:deploy": "pnpm -C cdk run cdk:deploy"
   }
 }

@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "deploy-cloudfront": "cdk deploy cloudfront-website --require-approval never --app 'tsx ./src/bin/cloudfront.ts'"
+    "cdk:synth": "cdk synth cloudfront-website --app 'tsx ./src/bin/cloudfront.ts'",
+    "cdk:deploy-from-cdk-out": "cdk deploy cloudfront-website --require-approval never --app cdk.out",
+    "cdk:deploy": "cdk deploy cloudfront-website --require-approval never --app 'tsx ./src/bin/cloudfront.ts'"
   },
   "dependencies": {
     "aws-cdk-lib": "2.235.1",

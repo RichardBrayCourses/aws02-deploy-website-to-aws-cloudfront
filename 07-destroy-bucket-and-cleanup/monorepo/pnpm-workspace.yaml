@@ -1,9 +1,5 @@
 packages:
-  - "cdk"
   - "scripts"
-
+  - "cdk"
 allowBuilds:
   esbuild: true
-
-onlyBuiltDependencies:
-  - esbuild

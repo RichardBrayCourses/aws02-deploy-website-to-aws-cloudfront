@@ -5,8 +5,8 @@
   "scripts": {
     "bootstrap-up": "pnpm -C scripts run bootstrap-up",
     "bootstrap-down": "pnpm -C scripts run bootstrap-down",
-    "deploy-cloudfront": "pnpm -C cdk run deploy-cloudfront",
-    "destroy-cloudfront": "pnpm -C cdk run destroy-cloudfront",
+    "cdk:deploy": "pnpm -C cdk run cdk:deploy",
+    "cdk:destroy": "pnpm -C cdk run cdk:destroy",
     "type-check": "pnpm -C cdk run type-check",
     "package-cleanup": "pnpm -r package-cleanup && rm -rf node_modules"
   }

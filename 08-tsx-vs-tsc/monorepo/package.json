@@ -7,6 +7,7 @@
     "bootstrap-down": "pnpm -C scripts run bootstrap-down",
     "cdk:deploy": "pnpm -C cdk run cdk:deploy",
     "cdk:destroy": "pnpm -C cdk run cdk:destroy",
+    "type-check": "pnpm -C cdk run type-check",
     "package-cleanup": "pnpm -r package-cleanup && rm -rf node_modules"
   }
 }

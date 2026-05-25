@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "bootstrap-up": "pnpm -C scripts run bootstrap-up",
+    "bootstrap-down": "pnpm -C scripts run bootstrap-down",
+    "cdk:deploy": "pnpm -C cdk run cdk:deploy",
+    "cdk:destroy": "pnpm -C cdk run cdk:destroy",
+    "ui:dev": "pnpm -C apps/ui run dev",
+    "ui:build": "pnpm -C apps/ui run build",
+    "ui:preview": "pnpm -C apps/ui run preview",
+    "ui:upload": "bash scripts/ui:upload.sh",
+    "invalidate-cloudfront": "bash scripts/invalidate-cloudfront.sh",
+    "deploy-website": "pnpm run ui:build && pnpm run ui:upload && pnpm run invalidate-cloudfront",
+    "deploy-everything": "pnpm run cdk:deploy && pnpm run deploy-website",
+    "package-cleanup": "pnpm -r package-cleanup && rm -rf node_modules"
+  }
+}

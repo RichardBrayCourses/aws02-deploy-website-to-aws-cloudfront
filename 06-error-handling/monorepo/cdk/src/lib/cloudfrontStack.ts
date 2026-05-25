@@ -22,6 +22,18 @@ export class CloudfrontStack extends Stack {
         origin: S3BucketOrigin.withOriginAccessControl(websiteBucket),
         viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       },
+      errorResponses: [
+        {
+          httpStatus: 403,
+          responseHttpStatus: 200,
+          responsePagePath: "/index.html",
+        },
+        {
+          httpStatus: 404,
+          responseHttpStatus: 200,
+          responsePagePath: "/index.html",
+        },
+      ],
     });
 
     // Saved SSM Parameters

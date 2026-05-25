@@ -4,4 +4,3 @@ packages:
   - "services/*"
 allowBuilds:
   esbuild: true
-  msw: true

@@ -1,7 +1,0 @@
-{
-  "name": "application2",
-  "version": "1.0.0",
-  "scripts": {
-    "msg": "echo Current folder: $(pwd)"
-  }
-}

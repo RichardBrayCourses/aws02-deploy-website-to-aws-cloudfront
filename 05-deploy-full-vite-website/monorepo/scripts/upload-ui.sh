@@ -4,7 +4,7 @@ set -euo pipefail
 
 REGION="eu-west-2"
 
-WEBSITE_BUCKET_PARAMETER="/my-course/dev/cloudfront/website-bucket-name"
+WEBSITE_BUCKET_NAME_PARAMETER="/cloudfront/website-bucket-name"
 
 UI_DIST_DIR="apps/ui/dist"
 
@@ -13,7 +13,7 @@ echo "Reading website bucket name from SSM Parameter Store..."
 echo ""
 
 WEBSITE_BUCKET_NAME=$(aws ssm get-parameter \
-  --name "$WEBSITE_BUCKET_PARAMETER" \
+  --name "$WEBSITE_BUCKET_NAME_PARAMETER" \
   --region "$REGION" \
   --query "Parameter.Value" \
   --output text)

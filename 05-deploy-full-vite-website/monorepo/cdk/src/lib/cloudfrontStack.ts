@@ -1,8 +1,5 @@
 import { CfnOutput, RemovalPolicy, Stack, type StackProps } from "aws-cdk-lib";
-import {
-  Distribution,
-  ViewerProtocolPolicy,
-} from "aws-cdk-lib/aws-cloudfront";
+import { Distribution, ViewerProtocolPolicy } from "aws-cdk-lib/aws-cloudfront";
 import { S3BucketOrigin } from "aws-cdk-lib/aws-cloudfront-origins";
 import { BlockPublicAccess, Bucket } from "aws-cdk-lib/aws-s3";
 import { StringParameter } from "aws-cdk-lib/aws-ssm";
@@ -42,17 +39,17 @@ export class CloudfrontStack extends Stack {
     const distributionUrl = `https://${distribution.distributionDomainName}`;
 
     new StringParameter(this, "CloudfrontDistributionDomainParameter", {
-      parameterName: "/my-course/dev/cloudfront/distribution-domain",
+      parameterName: "/cloudfront/distribution-domain",
       stringValue: distributionUrl,
     });
 
     new StringParameter(this, "CloudfrontDistributionIdParameter", {
-      parameterName: "/my-course/dev/cloudfront/distribution-id",
+      parameterName: "/cloudfront/distribution-id",
       stringValue: distribution.distributionId,
     });
 
     new StringParameter(this, "WebsiteBucketNameParameter", {
-      parameterName: "/my-course/dev/cloudfront/website-bucket-name",
+      parameterName: "/cloudfront/website-bucket-name",
       stringValue: websiteBucket.bucketName,
     });
 

@@ -4,7 +4,7 @@ set -euo pipefail
 
 REGION="eu-west-2"
 
-DISTRIBUTION_ID_PARAMETER="/my-course/dev/cloudfront/distribution-id"
+DISTRIBUTION_ID_PARAMETER="/cloudfront/distribution-id"
 
 echo ""
 echo "Reading CloudFront distribution ID from SSM Parameter Store..."

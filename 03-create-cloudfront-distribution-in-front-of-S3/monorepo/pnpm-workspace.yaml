@@ -1,0 +1,5 @@
+packages:
+  - "scripts"
+  - "cdk"
+allowBuilds:
+  esbuild: true

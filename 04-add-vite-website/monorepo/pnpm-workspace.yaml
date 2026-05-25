@@ -1,5 +1,7 @@
 packages:
+  - "apps/ui"
   - "scripts"
   - "cdk"
 allowBuilds:
   esbuild: true
+  msw: true

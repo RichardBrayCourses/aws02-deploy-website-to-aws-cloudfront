@@ -1,4 +1,6 @@
 packages:
-  - "apps/*"
+  - "apps/ui"
   - "cdk"
   - "services/*"
+allowBuilds:
+  esbuild: true

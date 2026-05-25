@@ -36,11 +36,11 @@ export class CloudfrontStack extends Stack {
       ],
     });
 
-    const distributionUrl = `https://${distribution.distributionDomainName}`;
+    const distributionDomain = `https://${distribution.distributionDomainName}`;
 
     new StringParameter(this, "CloudfrontDistributionDomainParameter", {
       parameterName: "/cloudfront/distribution-domain",
-      stringValue: distributionUrl,
+      stringValue: distributionDomain,
     });
 
     new StringParameter(this, "CloudfrontDistributionIdParameter", {
@@ -58,7 +58,7 @@ export class CloudfrontStack extends Stack {
     });
 
     new CfnOutput(this, "CloudfrontDistributionUrl", {
-      value: distributionUrl,
+      value: distributionDomain,
     });
 
     new CfnOutput(this, "CloudfrontDistributionId", {

@@ -5,6 +5,7 @@
   "scripts": {
     "cdk:deploy": "cdk deploy cloudfront-website --require-approval never --app 'tsx ./src/bin/cloudfront.ts'",
     "cdk:destroy": "cdk destroy cloudfront-website --force --require-approval never --app 'tsx ./src/bin/cloudfront.ts'",
+    "type-check": "tsc --noEmit",
     "package-cleanup": "rm -rf node_modules cdk.out"
   },
   "dependencies": {

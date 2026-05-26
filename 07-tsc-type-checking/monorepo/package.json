@@ -14,6 +14,7 @@
     "invalidate-cloudfront": "bash scripts/invalidate-cloudfront.sh",
     "deploy-website": "pnpm run ui:build && pnpm run ui:upload && pnpm run invalidate-cloudfront",
     "deploy-everything": "pnpm run cdk:deploy && pnpm run deploy-website",
+    "type-check": "pnpm -r type-check ",
     "package-cleanup": "pnpm -r package-cleanup && rm -rf node_modules"
   }
 }

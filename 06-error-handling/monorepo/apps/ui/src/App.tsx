@@ -2,6 +2,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import NotFound from "./pages/NotFound";
 import ThemeProvider, { useTheme } from "./context/ThemeContext";
 import AuthProvider from "./context/AuthContext";
 
@@ -15,6 +16,7 @@ const AppContent = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </div>

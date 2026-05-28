@@ -10,7 +10,7 @@ echo ""
 echo "Reading website bucket name from SSM Parameter Store..."
 echo ""
 
-WEBSITE_BUCKET_NAME=$(aws ssm get-parameter \
+WEBSITE_BUCKET_NAME=$(MSYS_NO_PATHCONV=1 aws ssm get-parameter \
   --name "$WEBSITE_BUCKET_NAME_PARAMETER" \
   --query "Parameter.Value" \
   --output text)

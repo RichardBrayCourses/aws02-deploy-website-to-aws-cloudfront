@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+# Note on MSYS_NO_PATHCONV=1
+# In Git Bash on Windows, this disables automatic path conversion so CLI
+# arguments such as SSM parameter paths and CloudFront paths are passed through unchanged.
+
 DISTRIBUTION_ID_PARAMETER="/cloudfront/distribution-id"
 
 echo ""
